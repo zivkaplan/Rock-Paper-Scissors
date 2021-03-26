@@ -29,9 +29,6 @@ function check(comp, user) {
     return `You Lost\nComputer chose ${moves[comp]}\nYou chose ${moves[user]}`
 }
 
-
-console.log();
-
 for (let i = 0; i < 5; i++) {
     let userInput = false;
     while (!userInput) {
