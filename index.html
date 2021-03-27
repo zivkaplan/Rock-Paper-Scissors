@@ -5,11 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Rock Paper Scissors</title>
 </head>
 
 <body>
+    <div class="bg">
+        <div class="lightText">
+            <h1>Rock Paper Scissors!</h1>
+            <p>Choose your weapon:</p>
+        </div>
+        <div class="container">
+            <img src="https://pngimg.com/uploads/stone/stone_PNG13601.png" id="rock" class="choose" />
+            <img src="https://lh3.googleusercontent.com/proxy/n-SHY8AUq2YfEbfOBItjVyzsQnJvZq00z5AeqSM9A1WukgRbl5PyBkXdvLMN4D5I93fYNUSK13V1u698F5RJUu6SmqFYYQbmJpttPPFuuQl6S3QnVN1YvJBGpe466l9wrcZQuIf_mhC9"
+                id="paper" class="choose" />
+            <img src="https://i.pinimg.com/originals/1b/ae/69/1bae69e53b680730bc8fda5d1eff689f.png" id="scissors"
+                class="choose" />
+        </div>
+        <div id="resultDiv">
+            <h3 id="winner" class="lightText"></h3>
+            <p id="result" class="lightText"></p>
+            <p id="finalResult" class="lightText"></p>
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 
