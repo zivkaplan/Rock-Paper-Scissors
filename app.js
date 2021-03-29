@@ -2,7 +2,7 @@
 const container = document.querySelector('.container')
 const result = document.querySelector('#result')
 const finalResult = document.querySelector("#finalResult")
-const winner = document.querySelector("#winner")
+const title = document.querySelector("#title")
 
 //computer player object
 function Computer() {
@@ -50,7 +50,7 @@ container.addEventListener('click', (e) => {
         userInput = validate(e.target.id)
     }
     let results = checkWinner(computer.play(), userInput)
-    winner.innerHTML = results[0]
+    title.innerHTML = results[0]
     result.innerText = results[1];
     finalResult.innerText = `Computer score: ${computer.score}\nPlayer score: ${player.score}\nDraws: ${drawCount}`;
 })
