@@ -37,7 +37,7 @@ function checkWinner(comp, user) {
     }
     if (comp + 1 === user || comp - 2 == user) {
         player.score += 1;
-        return ['You Win!', `Computer chose <b>${moves[comp]}</b> | You chose <b>${moves[user]}</b>`]
+        return ['You Won!', `Computer chose <b>${moves[comp]}</b> | You chose <b>${moves[user]}</b>`]
     }
     computer.score += 1;
     return ['You Lost!', `Computer chose <b>${moves[comp]}</b> | You chose <b>${moves[user]}</b>`]
