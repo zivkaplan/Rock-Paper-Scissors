@@ -30,17 +30,17 @@ function validate(input) {
 
 //functiom that checks who won
 function checkWinner(comp, user) {
-    const moves = { 1: "🗿", 2: "📄", 3: "✂" }
+    const moves = { 1: "rock", 2: "paper", 3: "scissors" }
     if (comp === user) {
         drawCount++;
-        return ['Draw!', `Computer chose ${moves[comp]}`]
+        return ['Draw!', `Computer chose ${moves[comp]}.`]
     }
     if (comp + 1 === user || comp - 2 == user) {
         player.score += 1;
-        return ['You Win!', `Computer chose ${moves[comp]}`]
+        return ['You Win!', `Computer chose ${moves[comp]}.`]
     }
     computer.score += 1;
-    return ['You Lost!', `Computer chose ${moves[comp]}`]
+    return ['You Lost!', `Computer chose ${moves[comp]}.`]
 }
 
 //Game
