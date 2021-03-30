@@ -33,14 +33,14 @@ function checkWinner(comp, user) {
     const moves = { 1: "rock", 2: "paper", 3: "scissors" }
     if (comp === user) {
         drawCount++;
-        return ['Draw!', `Computer chose ${moves[comp]}.`]
+        return ['Draw!', `Computer chose <b>${moves[comp]}</b> | You chose <b>${moves[user]}</b>`]
     }
     if (comp + 1 === user || comp - 2 == user) {
         player.score += 1;
-        return ['You Win!', `Computer chose ${moves[comp]}.`]
+        return ['You Win!', `Computer chose <b>${moves[comp]}</b> | You chose <b>${moves[user]}</b>`]
     }
     computer.score += 1;
-    return ['You Lost!', `Computer chose ${moves[comp]}.`]
+    return ['You Lost!', `Computer chose <b>${moves[comp]}</b> | You chose <b>${moves[user]}</b>`]
 }
 
 //Game
@@ -51,6 +51,6 @@ container.addEventListener('click', (e) => {
     }
     let results = checkWinner(computer.play(), userInput)
     title.innerHTML = results[0]
-    result.innerText = results[1];
-    finalResult.innerText = `Computer score: ${computer.score} | Player score: ${player.score} | Draws: ${drawCount}`;
+    result.innerHTML = results[1];
+    finalResult.innerHTML = `Computer score: <b>${computer.score}</b> | Player score: <b>${player.score}</b> | Draws: <b>${drawCount}</b>`;
 })
