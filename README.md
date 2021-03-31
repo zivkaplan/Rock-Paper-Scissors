@@ -1,6 +1,7 @@
 # Rock-Paper-Scissors
 
-Try your luck against the computer! 
+Try your luck against the computer!
+
 An exercise from ["the Odin Project"](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/rock-paper-scissors)
 
 Play here: https://zivkaplan.github.io/Rock-Paper-Scissors/
